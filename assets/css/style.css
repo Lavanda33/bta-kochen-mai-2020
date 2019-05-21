@@ -1,7 +1,79 @@
-body{
-  background: blue;
+* {
+  box-sizing: border-box;
 }
 
-header{
+html{
+  width: 100%;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+body{
+  margin: 0;
+  line-height: 1.4;
+  color: #333333;
+}
+
+#header{
+  height: 60px;
   background: #fff;
+  width: 100%;
+}
+
+#logo{
+  height: 40px;
+  width: auto;
+}
+
+#burger{
+  background: #fff;
+  border: 0;
+}
+
+#navigation a{
+  color: #333;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#navigation ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#navigation{
+  display: none;
+}
+
+@media (min-width: 960px) {
+
+  #burger{
+    display: none;
+  }
+
+  #navigation{
+    display: block;
+  }
+
+  #navigation ul{
+    display: flex;
+  }
+
+  .wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+  }
+
+  #navigation li{
+    margin-left: 1rem;
+  }
+  /* #header{
+    border: 2px solid #ff1493;
+
+  } */
+
+
 }
