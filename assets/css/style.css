@@ -17,6 +17,7 @@ body {
   height: 60px;
   background: #fff;
   width: 100%;
+  position: fixed;
 }
 
 #logo {
@@ -47,8 +48,22 @@ body {
 }
 
 #navigation.show{
-  display: block;
+  position: fixed;
+  background: #fff;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  height: calc(100% - 60px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+#navigation.show li{
+  padding: 1rem;
+}
+
 .flex {
   display: flex;
   justify-content: space-between;
